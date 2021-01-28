@@ -27,7 +27,7 @@ client.sin_addr.s_addr=inet_addr("127.0.0.1");*/
 
 char recv[256];
 recvfrom(server_sock,recv,sizeof(recv),0,(struct sockaddr*)&client,&len);
-//recv[k]="\0";
+recv[k]='\0';
 printf("recived message from the client is :%s",recv);
 close(server_sock);
 return 0;
