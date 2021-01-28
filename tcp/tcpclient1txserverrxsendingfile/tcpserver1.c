@@ -27,7 +27,7 @@ int main()
 	//recieve the message from the client
 	int n;
     FILE *fp;
-    char *filename="recv1.txt";
+    char *filename="recv.txt";
     fp=fopen(filename,"w");
     while(1)
       {
