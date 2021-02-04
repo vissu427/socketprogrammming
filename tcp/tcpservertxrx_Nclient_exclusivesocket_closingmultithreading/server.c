@@ -61,6 +61,7 @@ printf("We have recived message is %s from the port \n",recvmsg);
 
 //send the message to client
 char sendmsg[256]="We have recieved the message from your end";
+strcat(sendmsg,recvmsg);
 send(cli,sendmsg,sizeof(sendmsg),0);
 //close the client
 
